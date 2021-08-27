@@ -23,7 +23,7 @@
                 init: function () {
                     var marker = this.el;
                     this.vid = document.querySelector("#vid");
-                    var playthisvid_1 = document.querySelector('#play-button');
+                    var playthisvid_1 = document.querySelector('#playbutton_1');
 
                     playthisvid_1.addEventListener('click', () => {
                         this.vid.play();
@@ -70,7 +70,7 @@
                     autoplay
                     muted   
                        ></video>
-                
+                <image id="playbutton_1" src="assets/thumb-cubes.jpg" width="3" height="1.5"></a-image>
             </a-assets>
            
             
@@ -104,7 +104,7 @@
                     gesture-handler
                 ></a-video>
                 
-                <a-image id="playbutton_2" class="clickable" position="-5 0 0" width="2" height="2" rotation="0 -90 0"></a-image>
+                
             </a-marker>
 
             <a-entity camera></a-entity>
