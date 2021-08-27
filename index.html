@@ -10,7 +10,14 @@
                 init: function () {
                     var marker = this.el;
                     this.vid = document.querySelector("#vid");
+                    var playthisvid_1 = document.querySelector('#playbutton_1');
 
+                    playthisvid_1.addEventListener('click', () => {
+                        this.vid.play();
+                        console.log("it clicks_1");
+                        })
+                    }
+                
                     marker.addEventListener('markerFound', function () {
                         this.toggle = true;
                         this.vid.play();
@@ -26,6 +33,7 @@
     </head>
 
     <body style="margin: 0; overflow: hidden;">
+        <a-image id="playbutton_1" class="clickable" position="-5 0 0" width="2" height="2" rotation="0 -90 0"></a-image>
         <a-scene
             vr-mode-ui="enabled: false"
             loading-screen="enabled: false;"
